@@ -52,6 +52,7 @@ public class PaymentController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
+    @PutMapping
     public ResponseEntity<String> updateCheckAmountForCustomer(
             @PathVariable Integer customer_number,
             @PathVariable String check_number,@RequestParam BigDecimal amount)
