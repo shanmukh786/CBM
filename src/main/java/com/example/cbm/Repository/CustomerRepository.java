@@ -30,4 +30,6 @@ public interface CustomerRepository extends JpaRepository<Customers,Integer> {
 
 
     List<Customers> findByCreditLimit(BigDecimal creditLimit);
+    
+ 
 }
